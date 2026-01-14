@@ -5,10 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
+    <style>
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /* border: 1px solid seagreen; */
+            row-gap: 20px;
+            column-gap: 10px;
+            /* height: 300px; */
+        }
+
+        .date {
+            background-color: rgb(158, 244, 137);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            font-size: 1.5em;
+        }
+
+        .day {
+            background-color: rgba(252, 125, 35, 0.881);
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3em;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="calender">
+    <div class="calendar">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thr</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
         <div class="date">1</div>
         <div class="date">2</div>
         <div class="date">3</div>
@@ -39,11 +79,9 @@
         <div class="date">28</div>
         <div class="date">29</div>
         <div class="date">30</div>
-        <div class="date">31</div>
-        <div class="date">32</div>
-        <div class="date">33</div>
-        <div class="date">34</div>
-        <div class="date">35</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+
     </div>
 
 </body>
