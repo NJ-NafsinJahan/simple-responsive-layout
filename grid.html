@@ -5,6 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 50px; */
+            /* grid-template-columns: repeat(2, 3fr) 2fr; */
+            /* grid-template-columns: repeat(2, 100px) 120px 80px; */
+            grid-template-columns: 80px 80px;
+            justify-content: space-around;
+        }
+
+        .item {
+            border: 1px solid seagreen;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 60px 1fr 60px;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        header {
+            grid-column: 1 / 3;
+            background: lightblue;
+        }
+
+        aside {
+            background: lightgray;
+        }
+
+        main {
+            background: lightgreen;
+        }
+
+        footer {
+            grid-column: 1 / 3;
+            background: lightcoral;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,6 +75,14 @@
         <div class="item">item - 19</div>
         <div class="item">item - 20</div>
     </div>
+
+    <div class="layout">
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <main>Content</main>
+        <footer>Footer</footer>
+    </div>
+
 
 </body>
 
