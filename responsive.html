@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            border: 2px solid rgb(201, 99, 133);
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .image-container {
+            display: flex;
+
+        }
+
+        .image-container div {
+            width: 50%;
+        }
+
+        @media screen and (max-width:576px) {
+            .image-container {
+                flex-direction: column;
+            }
+
+            .image-container div {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Website</h1>
+        <ol>
+            <li>viewport meta tag</li>
+            <li>CSS relative units</li>
+            <li>body max width and horizontal center align</li>
+            <li>image fluid</li>
+            <li> two column and use media Query with flex-direction column</li>
+            <li>multi column:grid layout</li>
+            <li>menu Responsive :-> aita JS ar somoy dekhano hobe</li>
+        </ol>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <div><img src="./images/food3.jpg" alt="food3"></div>
+            <!-- <div><img src="./images/tiger.jpg" alt="tiger"></div> -->
+            <div><img src="./images/Bengal-tiger-cubs.webp" alt="Bengal tiger"></div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
